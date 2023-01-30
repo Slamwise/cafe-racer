@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
@@ -23,12 +23,12 @@ globalStyles.innerHTML = `
 rootElement.appendChild(globalStyles);
 document.body.appendChild(rootElement);
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
