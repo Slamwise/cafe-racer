@@ -29,6 +29,6 @@ module.exports = {
   },
   output: {
     filename: "content.js",
-    path: path.resolve(__dirname, "..", "extension"),
+    path: path.resolve(__dirname, "build/static/js/"),
   },
 };

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from './components/Button/Button';
 
 const App = () => {
   const [buttonText, setButtonText] = useState('Click Me');
@@ -11,8 +12,8 @@ const App = () => {
     <div>
         <header>
         <h2>Hello From React App 👋</h2>
-      </header>
-      <button onClick={handleClick}>{buttonText}</button>
+        </header>
+        <Button />
     </div>
   );
 };
